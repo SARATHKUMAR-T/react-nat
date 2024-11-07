@@ -21,42 +21,18 @@ export default function TabLayout() {
           title: "",
           tabBarIcon: ({ color, focused }) => (
             <TabBarIcon
-              name={focused ? "home" : "home-outline"}
+              name={focused ? "analytics" : "analytics-outline"}
               color={color}
             />
           ),
         }}
       />
       <Tabs.Screen
-        name="search"
-        options={{
-          title: "",
-          tabBarIcon: ({ color, focused }) => (
-            <TabBarIcon
-              name={focused ? "search" : "search-outline"}
-              color={color}
-            />
-          ),
-        }}
-      />
-      <Tabs.Screen
-        name="new"
+        name="streak"
         options={{
           title: "",
           tabBarIcon: ({ color, focused }) => (
             <TabBarIcon name={focused ? "add" : "add-outline"} color={color} />
-          ),
-        }}
-      />
-      <Tabs.Screen
-        name="reels"
-        options={{
-          title: "",
-          tabBarIcon: ({ color, focused }) => (
-            <TabBarIcon
-              name={focused ? "videocam" : "videocam-outline"}
-              color={color}
-            />
           ),
         }}
       />
